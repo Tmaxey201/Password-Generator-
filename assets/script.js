@@ -23,7 +23,34 @@ function generatePassword() {
        else {
            lowCasechars =""
        }
+
+       if (upperCase == true) {
+        upCasechars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" }
+        else {
+            upCasechars =""
+        }
+
+        if (numbers == true) {
+            nums = "0123456789" }
+            else {
+                nums =""
+            }
+
+            if (specialChars == true) {
+                specChars = "!\"#$&'()*+,-./;:<>=?@[]/^_`{}|~" }
+                else {
+                    specChars =""
+                }
+
+
+
+
+
+
+
    }
+
+    
 
   return 'yourpassword';
 }

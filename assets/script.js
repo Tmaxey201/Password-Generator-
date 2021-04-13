@@ -18,7 +18,13 @@ function generatePassword() {
      specialChars =confirm("Do you want special characters in your password?")
     }
 
-   
+   if (lowerCase == true) {
+       lowCasechars = "abcdefghijklmnopqrstuvwxyz" }
+       else {
+           lowCasechars =""
+       }
+   }
+
   return 'yourpassword';
 }
 // Write password to the #password input

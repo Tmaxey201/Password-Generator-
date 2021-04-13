@@ -8,16 +8,15 @@ function generatePassword () {
     var string = prompt("Enter the number of characters for desired password length between 8 and 128.");
 
     if (string < 8 || string > 128) {
-      alert("The number needs to be between 8 and 128")
+      alert("The number needs to be between 8 and 128. Please try again with a desired password length between 8 and 128")
     }
-        else return;
-
+    else {
     if (string => 8 && string <= 128) {
       lowerCase =confirm("Do you want lower case letters in your password?")
       upperCase =confirm("Do you want upper case letters in your password?")
       numbers =confirm("Do you want numbers in your password?")
      specialChars =confirm("Do you want special characters in your password?")
-    
+    }
 
    if (lowerCase == true) {
        lowCasechars = "abcdefghijklmnopqrstuvwxyz" }

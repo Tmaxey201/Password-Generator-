@@ -16,7 +16,7 @@ function generatePassword() {
       upperCase =confirm("Do you want upper case letters in your password?")
       numbers =confirm("Do you want numbers in your password?")
      specialChars =confirm("Do you want special characters in your password?")
-    }
+    
 
    if (lowerCase == true) {
        lowCasechars = "abcdefghijklmnopqrstuvwxyz" }
@@ -42,7 +42,13 @@ function generatePassword() {
                     specChars =""
                 }
 
+                random = (lowCasechars + upCasechars + nums + specChars)
 
+                for (let i = 0; n < random.length; i < string i++) {
+                    newPassword += random.charAt(Math.floor(Math.random()*n));
+                }
+            }   
+    }
 
 
 

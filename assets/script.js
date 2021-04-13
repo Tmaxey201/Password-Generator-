@@ -4,12 +4,13 @@ var random = ""
 var newPassword = "";
 
 
-function generatePassword() { 
-    var string = prompt("Enter the number of characters for desired password length between 8 and 128.")
+function generatePassword () { 
+    var string = prompt("Enter the number of characters for desired password length between 8 and 128.");
 
     if (string < 8 || string > 128) {
       alert("The number needs to be between 8 and 128")
     }
+        else return;
 
     if (string => 8 && string <= 128) {
       lowerCase =confirm("Do you want lower case letters in your password?")
@@ -21,7 +22,7 @@ function generatePassword() {
    if (lowerCase == true) {
        lowCasechars = "abcdefghijklmnopqrstuvwxyz" }
        else {
-           lowCasechars =""
+           lowCasechars = ""
        }
 
        if (upperCase == true) {
@@ -44,22 +45,19 @@ function generatePassword() {
 
                 random = (lowCasechars + upCasechars + nums + specChars)
 
-                for (let i = 0; n < random.length; i < string i++) {
+                for (let i = 0, n = random.length; i < string; ++i) {
                     newPassword += random.charAt(Math.floor(Math.random()*n));
                 }
-            }   
-    }
-
-
-
-
-
-   }
+            }  
+            return newPassword; 
+            }
+  
+    
 
     
 
-  return 'yourpassword';
-}
+  
+
 // Write password to the #password input
 function writePassword() {
   console.log('writing password');
@@ -68,4 +66,4 @@ function writePassword() {
   passwordText.value = password;
 }
 // Add event listener to generate button
-generateBtn.addEventListener('click', writePassword);git
+generateBtn.addEventListener('click', writePassword);
